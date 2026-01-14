@@ -1,0 +1,8 @@
+# Netlify/Vercel-style redirects for legacy URLs
+/our-services      /service-areas  301
+/news-and-updates  /blog           301
+/portfolio         /blog           301
+/sewer-line-repair /blog/sewer-line-repair-guide 301
+/contact-us        /contact        301
+/about             /about          301
+/                  /               301

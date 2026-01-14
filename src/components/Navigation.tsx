@@ -9,6 +9,7 @@ export default function Navigation() {
 
   const navLinks = [
     { href: '/', label: 'Home' },
+    { href: '/excavating-lawrenceburg-indiana', label: 'Lawrenceburg' },
     { href: '/about', label: 'About Us' },
     { href: '/service-areas', label: 'Service Areas' },
     { href: '/contact', label: 'Contact' },
