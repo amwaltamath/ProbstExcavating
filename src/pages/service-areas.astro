@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Service Areas | Aurora, Lawrenceburg, Dearborn County | Probst Excavating"
+  description="Probst Excavating proudly serves Aurora, Lawrenceburg, Dearborn County, and the entire Tri-State area (Indiana, Ohio, Kentucky) with professional excavation services."
+>
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+      Service Areas
+    </h1>
+
+    <div class="prose prose-lg max-w-none">
+      <section class="mb-12">
+        <p class="text-xl text-gray-700 mb-6">
+          Probst Excavating Services is proud to serve Aurora, Lawrenceburg, and the entire 
+          Tri-State area with professional excavation and site development services.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Primary Service Areas</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <div class="bg-blue-50 p-6 rounded-lg">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-3">Aurora, Indiana</h3>
+            <p class="text-gray-700">
+              Our home base and primary service area. We have extensive experience working 
+              with Aurora's unique terrain and local regulations.
+            </p>
+          </div>
+          
+          <div class="bg-blue-50 p-6 rounded-lg">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-3">Lawrenceburg, Indiana</h3>
+            <p class="text-gray-700">
+              Serving the Lawrenceburg community with reliable excavation services for 
+              residential and commercial projects.
+            </p>
+          </div>
+          
+          <div class="bg-blue-50 p-6 rounded-lg">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-3">Dearborn County, IN</h3>
+            <p class="text-gray-700">
+              We serve all of Dearborn County with comprehensive excavation and site 
+              development solutions.
+            </p>
+          </div>
+          
+          <div class="bg-blue-50 p-6 rounded-lg">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-3">Tri-State Area</h3>
+            <p class="text-gray-700">
+              Our services extend throughout the Tri-State region, including parts of 
+              Indiana, Ohio, and Kentucky.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Communities We Serve</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Aurora, IN</li>
+            <li>Lawrenceburg, IN</li>
+            <li>Greendale, IN</li>
+            <li>Bright, IN</li>
+            <li>Hidden Valley, IN</li>
+          </ul>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Dillsboro, IN</li>
+            <li>Moores Hill, IN</li>
+            <li>Sunman, IN</li>
+            <li>West Harrison, IN</li>
+            <li>Manchester, IN</li>
+          </ul>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Rising Sun, IN</li>
+            <li>Florence, KY</li>
+            <li>Union, KY</li>
+            <li>Harrison, OH</li>
+            <li>And surrounding areas</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-gray-50 p-8 rounded-lg">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Local Expertise Matters</h2>
+        <p class="text-gray-700 mb-4">
+          With over 20 years of experience working in Dearborn County and the surrounding 
+          Tri-State area, we understand the unique challenges of our region:
+        </p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+          <li><strong>Soil Conditions:</strong> We know the local terrain and how to work with it effectively</li>
+          <li><strong>Weather Patterns:</strong> Our experience helps us plan around seasonal challenges</li>
+          <li><strong>Local Regulations:</strong> We're familiar with county and municipal requirements</li>
+          <li><strong>Community Knowledge:</strong> We understand the specific needs of local homeowners and businesses</li>
+        </ul>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Not Sure If We Serve Your Area?</h2>
+        <p class="text-gray-700 mb-6">
+          If you're located in southeastern Indiana, southwestern Ohio, or northern Kentucky 
+          and need excavation services, we encourage you to reach out. We may be able to 
+          accommodate projects outside our typical service area.
+        </p>
+        <div class="bg-blue-600 text-white p-6 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-3">Contact us to discuss your project!</h3>
+          <p class="mb-4">
+            We're happy to provide free estimates and consultations for projects throughout 
+            the Tri-State area.
+          </p>
+          <a 
+            href="/contact" 
+            class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+          >
+            Get Your Free Estimate
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-gray-900 text-white mt-16 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gray-400">
+        © {new Date().getFullYear()} Probst Excavating Services. All rights reserved.
+      </p>
+      <p class="text-gray-400 mt-2">
+        Aurora, IN | Family-Owned & Operated Since 2004
+      </p>
+    </div>
+  </footer>
+</BaseLayout>

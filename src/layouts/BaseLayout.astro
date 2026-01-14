@@ -1,0 +1,102 @@
+---
+import '../styles/global.css';
+import Navigation from '../components/Navigation';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title = 'Probst Excavating Services | Aurora, IN | Residential & Commercial Excavation',
+  description = 'Family-owned excavation company serving Aurora, Lawrenceburg, and the Tri-State area for 20+ years. Specializing in residential foundations, land clearing, sewer lines, storm drainage, and site preparation.',
+  image = '/images/hero banner.jpeg'
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(image, Astro.site)} />
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://probstexcavating.com",
+      "name": "Probst Excavating Services",
+      "image": "https://probstexcavating.com/images/logo.png",
+      "url": "https://probstexcavating.com",
+      "telephone": "",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Aurora",
+        "addressRegion": "IN",
+        "postalCode": "",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.0581,
+        "longitude": -84.9008
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/probstexcavating/"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Aurora",
+          "containedIn": "Indiana"
+        },
+        {
+          "@type": "City",
+          "name": "Lawrenceburg",
+          "containedIn": "Indiana"
+        },
+        {
+          "@type": "City",
+          "name": "Dearborn County",
+          "containedIn": "Indiana"
+        }
+      ]
+    })} />
+  </head>
+  <body class="min-h-screen bg-white">
+    <Navigation client:load />
+    <slot />
+  </body>
+</html>

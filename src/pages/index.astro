@@ -1,0 +1,203 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const blogEntries = await getCollection('blog');
+const sortedBlogEntries = blogEntries.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<BaseLayout>
+  <!-- Hero Banner -->
+  <div class="relative h-[400px] md:h-[500px] overflow-hidden">
+    <img 
+      src="/images/herobanner.jpg" 
+      alt="Probst Excavating Services in Aurora, Indiana"
+      class="w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 flex items-center justify-center" style="background: #00000073;">
+      <div class="text-center text-white px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+          Probst Excavating Services
+        </h1>
+        <p class="text-xl md:text-2xl mb-6">
+          Family-Owned Excavation Experts Serving Aurora, IN & the Tri-State Area
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="/contact" 
+            class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+          >
+            Get a Free Quote
+          </a>
+          <a 
+            href="#services" 
+            class="inline-block bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+          >
+            Our Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- About Section -->
+    <section class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Professional Excavation You Can Trust
+      </h2>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+        For over 20 years, we've been delivering top-quality excavation and site development 
+        services. From residential foundations to commercial projects, our skilled team ensures 
+        precision, safety, and efficiency on every job.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+        Our Services
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">Excavating</h3>
+          <p class="text-gray-600">Professional excavation for residential and commercial projects</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">Land Clearing</h3>
+          <p class="text-gray-600">Preparing your property for new construction and development</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">Sewer Line Repair</h3>
+          <p class="text-gray-600">Trenchless technology to minimize yard damage</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">Water Lines</h3>
+          <p class="text-gray-600">Professional installation and repair services</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">Storm Drainage</h3>
+          <p class="text-gray-600">Protect your property from water damage</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">Site Preparation</h3>
+          <p class="text-gray-600">Professional grading and site development</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="bg-gray-50 rounded-lg p-8 mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">
+        Why Choose Probst Excavating?
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="flex gap-4">
+          <div class="text-blue-600 text-2xl">✓</div>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">20+ Years Experience</h3>
+            <p class="text-gray-600">Deep knowledge of Dearborn County's terrain</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="text-blue-600 text-2xl">✓</div>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Family-Owned</h3>
+            <p class="text-gray-600">Owner always on-site ensuring quality</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="text-blue-600 text-2xl">✓</div>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Licensed & Insured</h3>
+            <p class="text-gray-600">Fully bonded for your protection</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="text-blue-600 text-2xl">✓</div>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Modern Equipment</h3>
+            <p class="text-gray-600">State-of-the-art tools for precision work</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+        Latest from Our Blog
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {sortedBlogEntries.map((post) => (
+          <article class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition">
+            <a href={`/blog/${post.slug}`}>
+              {post.data.heroImage && (
+                <img 
+                  src={post.data.heroImage} 
+                  alt={post.data.title}
+                  class="w-full h-48 object-cover bg-gray-200"
+                />
+              )}
+              <div class="p-6">
+                <time class="text-sm text-gray-500">
+                  {post.data.pubDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </time>
+                <h3 class="text-xl font-semibold text-gray-900 mt-2 mb-3">
+                  {post.data.title}
+                </h3>
+                <p class="text-gray-600">
+                  {post.data.description}
+                </p>
+                {post.data.tags && post.data.tags.length > 0 && (
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    {post.data.tags.slice(0, 3).map((tag) => (
+                      <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </a>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="text-center bg-blue-50 rounded-lg p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        Proudly Serving the Tri-State Area
+      </h2>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
+        Aurora, Lawrenceburg, Dearborn County, and surrounding communities in Indiana, Ohio, and Kentucky
+      </p>
+      <a 
+        href="https://www.facebook.com/probstexcavating/" 
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+      >
+        Visit Us on Facebook
+      </a>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white mt-16 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gray-400">
+        © {new Date().getFullYear()} Probst Excavating Services. All rights reserved.
+      </p>
+      <p class="text-gray-400 mt-2">
+        Aurora, IN | Family-Owned & Operated Since 2004
+      </p>
+    </div>
+  </footer>
+</BaseLayout>
