@@ -2,7 +2,7 @@
 title: 'Emergency Sinkhole Repair in Aurora, Indiana: 8-Foot Driveway Collapse Fixed'
 description: 'How Probst Excavating rescued an Aurora, IN homeowner from an 8-foot sinkhole disaster. Expert culvert replacement and drainage repair serving Aurora, Lawrenceburg, Harrison OH, and Southeast Indiana.'
 pubDate: 2026-02-25
-heroImage: '/images/blogs/aurora sinkhole/sinkhole.jpg'
+heroImage: '/images/blogs/aurora-sinkhole/sinkhole.jpg'
 tags: ['aurora indiana', 'sinkhole repair', 'drainage solutions', 'lawrenceburg', 'harrison ohio', 'dearborn county', 'culvert replacement', 'emergency excavation']
 location: 'Aurora, IN'
 service: 'Sinkhole Repair & Drainage Solutions'
@@ -14,7 +14,7 @@ service: 'Sinkhole Repair & Drainage Solutions'
 
 ## The Problem: A Massive Sinkhole in Aurora
 
-![Sinkhole damage in Aurora Indiana driveway](/images/blogs/aurora sinkhole/sinkhole2.jpg)
+![Sinkhole damage in Aurora Indiana driveway](/images/blogs/aurora-sinkhole/sinkhole2.jpg)
 
 Imagine waking up to find your driveway collapsed into an 8-foot-deep chasm. For this Aurora family, that's exactly what happened. The culprit? Decades-old drainage infrastructure that had finally given out.
 
@@ -28,7 +28,7 @@ This wasn't just a cosmetic issue—it was a safety hazard that needed immediate
 
 ## Our Solution: Complete Culvert Replacement
 
-![Excavation work in progress](/images/blogs/aurora sinkhole/sinkhole3.jpg)
+![Excavation work in progress](/images/blogs/aurora-sinkhole/sinkhole3.jpg)
 
 ### The Probst Excavating Approach
 
@@ -38,13 +38,13 @@ This wasn't just a cosmetic issue—it was a safety hazard that needed immediate
 
 **Modern Replacement:** We installed a robust **30-inch double-walled pipe** designed to handle Southeast Indiana's challenging drainage conditions for decades to come.
 
-![New culvert pipe installation](/images/blogs/aurora sinkhole/sinkhole5.jpg)
+![New culvert pipe installation](/images/blogs/aurora-sinkhole/sinkhole5.jpg)
 
 **Proper Backfill:** The new pipe was surrounded with compacted sand for stability and proper drainage—no shortcuts, just quality workmanship.
 
 **Driveway Restoration:** Fresh driveway stone was carefully graded and compacted, restoring full access to the property.
 
-![Completed driveway repair](/images/blogs/aurora sinkhole/sinkhole8.jpg)
+![Completed driveway repair](/images/blogs/aurora-sinkhole/sinkhole8.jpg)
 
 ## Why Sinkholes Happen in Aurora & Lawrenceburg
 
@@ -69,7 +69,7 @@ Don't wait for a collapse! Watch for these red flags:
 
 ## Why Choose Probst Excavating for Sinkhole Repair?
 
-![Professional excavation equipment](/images/blogs/aurora sinkhole/sinkhole6.jpg)
+![Professional excavation equipment](/images/blogs/aurora-sinkhole/sinkhole6.jpg)
 
 ### 20+ Years Serving Aurora, Lawrenceburg & the Tri-State Area
 
@@ -91,7 +91,7 @@ We're proud to serve:
 
 ## The Results: Peace of Mind Restored
 
-![Finished driveway restoration](/images/blogs/aurora sinkhole/sinkhole9.jpg)
+![Finished driveway restoration](/images/blogs/aurora-sinkhole/sinkhole9.jpg)
 
 This Aurora family now has:
 - A **driveway that's safer and stronger** than before
